@@ -68,7 +68,7 @@ Configure AWS CLI Login Using AWS Access Credentials (Using Windows Command Prom
 
      AWS Access Key ID [****************4Q3O]:
 
-     AWS Secret Access Key [****************RAG5
+     AWS Secret Access Key [****************RAG5]:
 
 
 Install Terraform (optional)
