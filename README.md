@@ -208,25 +208,25 @@ Using Terraform    # Using Terraform For My AWS Infra Build
 Directory Structure
 
 
-/aws-infrastructur
+/aws-infrastructure
 
-├── cloudformation
+     ├── cloudformation
 
-│   ├── aws_infrastructure.yml
+     │   ├── aws_infrastructure.yml
 
-├── terraform
+   ├── terraform
 
-│   ├── main.tf                                   
+     │   ├── main.tf                                   
 
-│   ├── variables.tf                            
+     │   ├── variables.tf                            
 
-│   └── outputs.tf                                
+     │   └── outputs.tf                                
 
-├── README.md                                     
+   ├── README.md                                     
 
-└── scripts
+     └── scripts
 
-    ├── user_data.sh                              
+     ├── user_data.sh                              
 
 
 Customization
@@ -261,7 +261,7 @@ Using Terraform
 
 To destroy the infrastructure created by Terraform, run:
 
-terraform destroy
+    terraform destroy
 
 Confirm the destruction when prompted, and Terraform will delete all resources.
 
