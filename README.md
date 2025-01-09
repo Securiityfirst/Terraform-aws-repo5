@@ -69,6 +69,10 @@ Configure AWS CLI Login Using AWS Access Credentials (Using Windows Command Prom
      AWS Access Key ID [****************4Q3O]:
 
      AWS Secret Access Key [****************RAG5]:
+     
+     Default region name [us-east-1]:
+
+     Default output format [json]:
 
 
 Install Terraform (optional)
@@ -206,14 +210,14 @@ Directory Structure
 
 /aws-infrastructure
 ├── cloudformation
-│   ├── aws_infrastructure.yml                    # CloudFormation template for infrastructure
+│   ├── aws_infrastructure.yml
 ├── terraform
-│   ├── main.tf                                   # Terraform configuration for the infrastructure
-│   ├── variables.tf                              # Variables for Terraform configuration
-│   └── outputs.tf                                # Outputs from the Terraform run
-├── README.md                                     # This file
+│   ├── main.tf                                   
+│   ├── variables.tf                            
+│   └── outputs.tf                                
+├── README.md                                     
 └── scripts
-    ├── user_data.sh                              # Example user data script for EC2 instance initialization
+    ├── user_data.sh                              
 
 Customization
 
