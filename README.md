@@ -61,7 +61,7 @@ brew install awscli
     $ sudo ./aws/install
 
 
-Configure AWS CLI (Using Windows Command Prompt)
+Configure AWS CLI Login Using AWS Access Credentials (Using Windows Command Prompt)
 
 
      aws configure
