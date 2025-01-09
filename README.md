@@ -175,7 +175,7 @@ Using Terraform    # Using Terraform For My AWS Infra Build
         git clone https://github.com/your-repo/Terraform-aws-repo5.git
 
 
-        cd aws-infrastructure
+        cd Terraform-aws-repo5
 
 
 	2.	Initialize Terraform.
