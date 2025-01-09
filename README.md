@@ -162,13 +162,13 @@ Using CloudFormation
 
 
 
-Using Terraform
+Using Terraform    # Using Terraform For My AWS Infra Build
 
 
 	1.	Clone this repository to your local machine.
 
 
-        git clone https://github.com/your-repo/aws-infrastructure.git
+        git clone https://github.com/your-repo/Terraform-aws-repo5.git
 
 
         cd aws-infrastructure
