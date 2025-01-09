@@ -208,16 +208,26 @@ Using Terraform    # Using Terraform For My AWS Infra Build
 Directory Structure
 
 
-/aws-infrastructure
+/aws-infrastructur
+
 ├── cloudformation
+
 │   ├── aws_infrastructure.yml
+
 ├── terraform
+
 │   ├── main.tf                                   
+
 │   ├── variables.tf                            
+
 │   └── outputs.tf                                
+
 ├── README.md                                     
+
 └── scripts
+
     ├── user_data.sh                              
+
 
 Customization
 
