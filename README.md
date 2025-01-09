@@ -46,12 +46,12 @@ Install AWS CLI
 brew install awscli
 
 
-# For Linux
+# For Linux 
 
 sudo apt-get install awscli
 
 
-Configure AWS CLI
+Configure AWS CLI (Using Windows Command Prompt)
 
 
      aws configure
