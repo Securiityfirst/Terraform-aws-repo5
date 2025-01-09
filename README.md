@@ -221,9 +221,7 @@ Directory Structure
      │   ├── variables.tf                            
 
      │   └── outputs.tf                                
-
-   ├── README.md                                     
-
+     
      └── scripts
 
      ├── user_data.sh                              
