@@ -214,7 +214,7 @@ Directory Structure
 
      │   ├── aws_infrastructure.yml
 
-   ├── terraform
+     ├── terraform
 
      │   ├── main.tf                                   
 
