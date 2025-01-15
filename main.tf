@@ -156,7 +156,6 @@ resource "aws_vpc" "default" {
 }
 
 resource "aws_eip" "one" {
-   vpc                       = true
    network_interface         = aws_network_interface.ni.id
  }
 
