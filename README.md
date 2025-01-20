@@ -1,7 +1,8 @@
-# Terraform-aws-repo5 
+
+# Terraform-aws-repo5
 
 
-AWS Infrastructure Build - README
+AWS Infrastructure Build Cloud Security Vulnerability Test Case- README
 
 
 Overview
@@ -9,32 +10,34 @@ Overview
 
 This repository provides the necessary configurations and scripts to set up an AWS infrastructure, including network interfaces and EC2 instances. The infrastructure is designed to provide a basic and scalable environment for hosting applications. It includes:
 
-	•	VPC (Virtual Private Cloud)
+    •    VPC (Virtual Private Cloud)
 
-	•	Subnets
+    •    Subnets
 
-	•	Security Groups
+    •    Security Groups
 
-	•	EC2 Instances
+    •    EC2 Instances
 
-	•	Network Interfaces (ENI)
+    •    Network Interfaces (ENI)
 
-	•	Route Tables
+    •    Route Tables
 
 
 The infrastructure is automated through AWS CloudFormation or Terraform scripts, allowing you to deploy and manage your AWS resources easily.
+Note: This test case shows the use of cloud security posture management tool (Prisma Cloud) to demonstrate security vulnerabilities from infrastructure build including AWS services such as IAM, AMI, VPC, Security Groups, Subnets and Ec2 instance configurations.
+
 
 Prerequisites
 
 Before you begin, ensure that you have the following:
 
-	1.	AWS Account: An active AWS account with sufficient privileges.
+    1.    AWS Account: An active AWS account with sufficient privileges.
 
-	2.	AWS CLI: Install and configure the AWS Command Line Interface (CLI) on your local machine.
+    2.    AWS CLI: Install and configure the AWS Command Line Interface (CLI) on your local machine.
 
-	3.	IAM Permissions: Ensure that the AWS user/role you are using has sufficient permissions to create and manage resources like EC2, VPC, subnets, etc.
+    3.    IAM Permissions: Ensure that the AWS user/role you are using has sufficient permissions to create and manage resources like EC2, VPC, subnets, etc.
 
-	4.	Terraform (optional): If you are using Terraform for infrastructure provisioning, install Terraform on your local machine.
+    4.    Terraform : If you are using Terraform for infrastructure provisioning, install Terraform on your local machine.
 
 
 
@@ -46,7 +49,7 @@ Install AWS CLI
 brew install awscli
 
 
-# For Linux 
+# For Linux
 
 
     $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -69,7 +72,7 @@ Configure AWS CLI Login Using AWS Access Credentials (Using Windows Command Prom
      AWS Access Key ID [****************4Q3O]:
 
      AWS Secret Access Key [****************RAG5]:
-     
+
      Default region name [us-east-1]:
 
      Default output format [json]:
@@ -89,13 +92,13 @@ Infrastructure Components
 
 A custom VPC is created with both public and private subnets. The VPC setup includes:
 
-	•	CIDR Block: 10.0.0.0/16
+    •    CIDR Block: 10.0.0.0/16
 
-	•	Two Subnets:
+    •    Two Subnets:
 
-	•	Public subnet: 10.0.1.0/24
+    •    Public subnet: 10.0.1.0/24
 
-	•	Private subnet: 10.0.2.0/24
+    •    Private subnet: 10.0.2.0/24
 
 
 
@@ -104,13 +107,13 @@ A custom VPC is created with both public and private subnets. The VPC setup incl
 
 The EC2 instance configuration includes:
 
-	•	Instance type: t2.micro (or another instance type as per your requirement)
+    •    Instance type: t2.micro (or another instance type as per your requirement)
 
-	•	AMI: A default Amazon Linux 2 AMI or custom AMI
+    •    AMI: A default Amazon Linux 2 AMI or custom AMI
 
-	•	SSH Key Pair for secure access to the instance
+    •    SSH Key Pair for secure access to the instance
 
-	•	User-data scripts for automatic configuration
+    •    User-data scripts for automatic configuration
 
 
 3. Security Groups
@@ -118,9 +121,9 @@ The EC2 instance configuration includes:
 
 A security group is defined to allow:
 
-	•	SSH (port 22) for the EC2 instances
+    •    SSH (port 22) for the EC2 instances
 
-	•	HTTP (port 80) and HTTPS (port 443) for web servers, if necessary
+    •    HTTP (port 80) and HTTPS (port 443) for web servers, if necessary
 
 
 4. Network Interfaces (ENI)
@@ -135,10 +138,10 @@ Elastic Network Interfaces (ENIs) are configured for attaching to EC2 instances 
 A route table is configured for proper routing within the VPC. The route table includes:
 
 
-	•	A default route to the internet gateway for public subnets.
+    •    A default route to the internet gateway for public subnets.
 
 
-	•	A private route table for the private subnet, which may use a NAT Gateway for internet access.
+    •    A private route table for the private subnet, which may use a NAT Gateway for internet access.
 
 
 
@@ -149,19 +152,19 @@ Quick Start
 Using CloudFormation
 
 
-	1.	Navigate to the AWS Management Console.
+    1.    Navigate to the AWS Management Console.
 
 
-	2.	Go to the CloudFormation service.
+    2.    Go to the CloudFormation service.
 
 
-	3.	Create a new stack using the provided CloudFormation template (e.g., aws_infrastructure.yml).
+    3.    Create a new stack using the provided CloudFormation template (e.g., aws_infrastructure.yml).
 
 
-	4.	Follow the steps to configure parameters (VPC CIDR, instance type, etc.).
+    4.    Follow the steps to configure parameters (VPC CIDR, instance type, etc.).
 
 
-	5.	Once the stack creation completes, you will have a fully provisioned infrastructure with EC2 instances and network interfaces.
+    5.    Once the stack creation completes, you will have a fully provisioned infrastructure with EC2 instances and network interfaces.
 
 
 
@@ -169,7 +172,7 @@ Using CloudFormation
 Using Terraform    # Using Terraform For My AWS Infra Build
 
 
-	1.	Clone this repository to your local machine.
+    1.    Clone this repository to your local machine.
 
 
         git clone https://github.com/your-repo/Terraform-aws-repo5.git
@@ -178,30 +181,30 @@ Using Terraform    # Using Terraform For My AWS Infra Build
         cd Terraform-aws-repo5
 
 
-	2.	Initialize Terraform.
+    2.    Initialize Terraform.
 
 
         terraform init
 
 
-	3.	Review the Terraform configuration.
+    3.    Review the Terraform configuration.
 
 
         terraform plan
 
 
 
-	4.	Apply the configuration to create the infrastructure.
+    4.    Apply the configuration to create the infrastructure.
 
 
         terraform apply
 
 
 
-	5.	Confirm the changes and wait for Terraform to provision the resources.
+    5.    Confirm the changes and wait for Terraform to provision the resources.
 
 
-	6.	Once complete, the EC2 instance(s) and network interfaces will be provisioned.
+    6.    Once complete, the EC2 instance(s) and network interfaces will be provisioned.
 
 
 
@@ -216,15 +219,15 @@ Directory Structure
 
      ├── terraform
 
-     │   ├── main.tf                                   
+     │   ├── main.tf
 
-     │   ├── variables.tf                            
+     │   ├── variables.tf
 
-     │   └── outputs.tf                                
-     
+     │   └── outputs.tf
+
      └── scripts
 
-     ├── user_data.sh                              
+     ├── user_data.sh
 
 
 Customization
@@ -233,11 +236,29 @@ Customization
 You can customize the infrastructure by modifying the following parameters:
 
 
-	•	VPC CIDR Block: Modify the CIDR block to match your network requirements.
+    •    VPC CIDR Block: Modify the CIDR block to match your network requirements.
 
-	•	EC2 Instance Type: Change the instance type in the CloudFormation or Terraform configuration.
+    •    EC2 Instance Type: Change the instance type in the CloudFormation or Terraform configuration.
 
-	•	Security Group Rules: Adjust the security group to open additional ports or restrict access based on your needs.
+    •    Security Group Rules: Adjust the security group to open additional ports or restrict access based on your needs.
+
+
+Using Virtual Studio Code with Prisma cloud plugin to capture infrastructure loopholes and recommendations as show below.
+
+Screenshots
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Clean Up
@@ -246,13 +267,13 @@ To avoid incurring extra charges, be sure to delete the resources when you’re 
 
 Using CloudFormation
 
-	1.	Go to the AWS Management Console.
+    1.    Go to the AWS Management Console.
 
-	2.	Navigate to the CloudFormation service.
+    2.    Navigate to the CloudFormation service.
 
-	3.	Select the stack you created.
+    3.    Select the stack you created.
 
-	4.	Click on Delete.
+    4.    Click on Delete.
 
 
 Using Terraform
@@ -261,15 +282,15 @@ To destroy the infrastructure created by Terraform, run:
 
     terraform destroy
 
-Confirm the destruction when prompted, and Terraform will delete all resources.
+Confirm the destruction when prompted and Terraform will delete all resources.
 
 Troubleshooting
 
-	•	Ensure that your AWS credentials have sufficient permissions to create and manage EC2, VPC, and other necessary services.
-    
-	•	If the EC2 instances fail to launch, check the security group and IAM role permissions.
+    •    Ensure that your AWS credentials have sufficient permissions to create and manage EC2, VPC, and other necessary services.
 
-	•	If you encounter issues with the network interface, ensure that it is correctly attached to the EC2 instance and has proper routing configured.
+    •    If the EC2 instances fail to launch, check the security group and IAM role permissions.
+
+    •    If you encounter issues with the network interface, ensure that it is correctly attached to the EC2 instance and has proper routing configured.
 
 
 Contributing
@@ -279,3 +300,4 @@ If you find any issues or want to contribute improvements, feel free to submit a
 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
