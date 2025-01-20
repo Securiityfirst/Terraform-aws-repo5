@@ -245,23 +245,16 @@ You can customize the infrastructure by modifying the following parameters:
 
 Using Virtual Studio Code with Prisma cloud plugin to capture infrastructure loopholes and recommendations as show below.
 
-Screenshots
+#Screenshots
 
+![image](https://github.com/user-attachments/assets/88a5afe9-3774-4815-a62c-5e824f15e96e)
+![image](https://github.com/user-attachments/assets/bd927c29-24f5-4f85-b739-50cca3043ff8)
+![image](https://github.com/user-attachments/assets/6146eddd-bb1d-4262-ae19-d300fc94f59f)
+![image](https://github.com/user-attachments/assets/e8b02825-b029-4ecb-9dc4-2b5154e4d184)
+![image](https://github.com/user-attachments/assets/583cb9f4-c155-4b29-a3a5-ebd876f29804)
+![image](https://github.com/user-attachments/assets/b3454dfd-0840-4fb3-8a10-fef63f8d19c8)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Clean Up
+#Clean Up
 
 To avoid incurring extra charges, be sure to delete the resources when you’re done using them.
 
