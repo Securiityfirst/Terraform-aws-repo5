@@ -24,6 +24,7 @@ This repository provides the necessary configurations and scripts to set up an A
 
 
 The infrastructure is automated through AWS CloudFormation or Terraform scripts, allowing you to deploy and manage your AWS resources easily.
+
 Note: This test case shows the use of cloud security posture management tool (Prisma Cloud) to demonstrate security vulnerabilities from infrastructure build including AWS services such as IAM, AMI, VPC, Security Groups, Subnets and Ec2 instance configurations.
 
 
@@ -253,6 +254,9 @@ Using Virtual Studio Code with Prisma cloud plugin to capture infrastructure loo
 ![image](https://github.com/user-attachments/assets/e8b02825-b029-4ecb-9dc4-2b5154e4d184)
 ![image](https://github.com/user-attachments/assets/583cb9f4-c155-4b29-a3a5-ebd876f29804)
 ![image](https://github.com/user-attachments/assets/b3454dfd-0840-4fb3-8a10-fef63f8d19c8)
+![image](https://github.com/user-attachments/assets/3531b156-48c7-4e5e-9126-f6de1f8ce8a4)
+![image](https://github.com/user-attachments/assets/a619e605-a875-425e-97d5-0b9a446e75c5)
+
 
 #Clean Up
 
