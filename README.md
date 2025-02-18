@@ -8,7 +8,9 @@ AWS Infrastructure Build Cloud Security Vulnerability Test Case- README
 Overview
 
 
-This repository provides the necessary configurations and scripts to set up an AWS infrastructure, including network interfaces and EC2 instances. The infrastructure is designed to provide a basic and scalable environment for hosting applications. It includes:
+This repository provides the necessary configurations and scripts to set up an AWS infrastructure, including network interfaces and EC2 instances. The infrastructure is designed to provide a basic and scalable environment for hosting applications. Demonstrating infrastructure loopholes and recommendations using Vitual studio Code and Prisma Cloud Plugin.
+
+ It includes:
 
     •    VPC (Virtual Private Cloud)
 
